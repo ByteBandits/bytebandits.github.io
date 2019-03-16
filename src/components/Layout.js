@@ -1,4 +1,4 @@
-import React, { Fragment } from "react"
+import React from "react"
 import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
 
@@ -25,7 +25,7 @@ body {
 }
 `;
 
-const Layout = ({ children, location }) => (
+const Layout = ({ children, location, containerStyle }) => (
   <StaticQuery
     query={graphql`
       query SiteTitleQuery {
@@ -37,7 +37,7 @@ const Layout = ({ children, location }) => (
       }
     `}
     render={data => (
-      <Fragment>
+      <>
         <GlobalStyle />
         <ThemeProvider theme={{ colors }}>
           <>  {/* ThemeProvider expects a single child */}
@@ -45,9 +45,9 @@ const Layout = ({ children, location }) => (
             <div
               style={{
                 margin: `0 auto`,
-                maxWidth: 960,
+                maxWidth: containerStyle ? (containerStyle.maxWidth === undefined ? 960 : containerStyle.maxWidth) : 960,
                 minHeight: 760,
-                paddingTop: 24,
+                paddingTop: containerStyle ? (containerStyle.paddingTop === undefined ? 24 : containerStyle.paddingTop) : 24,
               }}
             >
               <main>{children}</main>
@@ -55,7 +55,7 @@ const Layout = ({ children, location }) => (
           </>
         </ThemeProvider>
         <Footer/>
-      </Fragment>
+      </>
     )}
   />
 )

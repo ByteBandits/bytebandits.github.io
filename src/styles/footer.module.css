@@ -7,8 +7,7 @@ footer {
   position: relative;
 }
 
-footer a,
-footer a:visited {
+footer a {
   color: #999;
 }
 footer a:hover,

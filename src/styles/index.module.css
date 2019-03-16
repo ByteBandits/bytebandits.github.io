@@ -1,0 +1,9 @@
+.textBanner {
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 8px;
+  border: 1px solid rgba(0, 96, 0, 0.72);
+}
+
+.textBanner a {
+  color: inherit;
+}
