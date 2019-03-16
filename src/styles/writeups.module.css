@@ -1,0 +1,11 @@
+.card > p {
+  margin: 0;
+  font-size: 0.75em;
+  color: #efefef;
+}
+
+.card>p:nth-child(1) {
+  font-weight: 700;
+  color: #fff;
+  font-size: 1em;
+}

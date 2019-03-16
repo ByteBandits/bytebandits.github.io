@@ -1,0 +1,3 @@
+[submodule "src/writeups"]
+	path = src/writeups
+	url = https://github.com/ByteBandits/writeups.git
