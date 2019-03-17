@@ -46,7 +46,6 @@ const Layout = ({ children, location, containerStyle }) => (
               style={{
                 margin: `0 auto`,
                 maxWidth: containerStyle ? (containerStyle.maxWidth === undefined ? 960 : containerStyle.maxWidth) : 960,
-                minHeight: 760,
                 paddingTop: containerStyle ? (containerStyle.paddingTop === undefined ? 24 : containerStyle.paddingTop) : 24,
               }}
             >
