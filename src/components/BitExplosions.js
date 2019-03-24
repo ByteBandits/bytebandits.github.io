@@ -35,7 +35,7 @@ export default class BitExplosions extends React.Component {
     const ctx = c.getContext('2d')
     const w = window.innerWidth
     const h = 760
-    let amount = ((w * h) / 500) | 0
+    let amount = ((w * h) / 1024) | 0
 
     function getPrerenderedBit(bit) {
       var prerenderedBit = document.createElement('canvas')
@@ -43,7 +43,7 @@ export default class BitExplosions extends React.Component {
       prerenderedBit.height = 24
       var ctx = prerenderedBit.getContext('2d')
       ctx.font = '12px sans-serif'
-      ctx.fillStyle = '#0a400a'
+      ctx.fillStyle = '#1a801a'
       ctx.fillText(bit, 0, 12)
       return prerenderedBit
     }
@@ -79,13 +79,9 @@ export default class BitExplosions extends React.Component {
       ctx.save()
 
       ctx.globalCompositeOperation = 'destination-out'
-      //ctx.fillStyle = 'rgb(0, 0, 0)'
-      ctx.fillStyle = 'rgba(0, 0, 0, .4)'
-      //ctx.globalAlpha = .2
+      ctx.fillStyle = 'rgb(0, 0, 0)'
       ctx.fillRect(0, 0, w, h)
-      //ctx.globalAlpha = 1
       ctx.globalCompositeOperation = settings.composite
-      //ctx.globalCompositeOperation = 'source-over'
 
       ctx.fillStyle = "none"
       ctx.strokeStyle = '#fff'
