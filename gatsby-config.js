@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
     title: `ByteBandits`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    description: `Hide yo' bytes, hide yo' bits, or be pwn'd by ByteBandits! We are a team of hackers and geeks with our roots from IIT Indore, we solve CTF problems and write writeups for them.`,
+    author: `ByteBandits`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
