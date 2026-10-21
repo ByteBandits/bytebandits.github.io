@@ -31,7 +31,7 @@ body {
 
 .nav-desktop { margin-left: auto; display: flex; align-items: center; gap: 26px; }
 .nav-desktop > a {
-  color: #fff; text-decoration: none;
+  color: var(--dim); text-decoration: none;
   font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
   font-size: 15px; letter-spacing: 0.08em; text-transform: uppercase;
   padding-bottom: 4px;
@@ -46,7 +46,7 @@ body {
   margin-left: 18px; padding-left: 18px;
   border-left: 1px solid #1f3d1f;
 }
-.nav-social a { color: #fff; display: inline-flex; transition: color 0.2s; }
+.nav-social a { color: var(--dim); display: inline-flex; transition: color 0.2s; }
 .nav-social a:hover { color: var(--green); }
 
 .burger {
@@ -71,7 +71,7 @@ body {
 }
 .nav-mobile.open { display: flex; }
 .nav-mobile > a {
-  color: #fff; text-decoration: none; text-align: center;
+  color: var(--dim); text-decoration: none; text-align: center;
   font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
   font-size: 17px; padding: 22px;
   border-bottom: 1px solid var(--border);
