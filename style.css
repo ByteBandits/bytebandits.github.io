@@ -103,7 +103,7 @@ body {
   position: absolute; top: 50%; left: 50%;
   transform: translate(-50%, -50%);
   z-index: 2;
-  max-width: 640px; width: calc(100% - 48px);
+  width: fit-content; max-width: calc(100% - 48px);
   padding: 34px 40px;
   background: rgba(13, 17, 23, 0.92);
   border: 1px solid var(--green-dim);
@@ -115,7 +115,8 @@ body {
   font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
   font-size: 40px; color: var(--green); margin-bottom: 18px;
 }
-.banner p { margin-bottom: 14px; line-height: 1.65; }
+.banner p { margin-bottom: 14px; line-height: 1.65; white-space: nowrap; }
+ (max-width: 900px) { .banner p { white-space: normal; } }
 .banner p:last-child { margin-bottom: 0; }
 .banner a { color: #fff; }
 .banner a:hover { color: var(--green); }
