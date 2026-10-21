@@ -2,8 +2,8 @@
   --bg: #000;
   --panel: #0a0f0a;
   --border: #163016;
-  --green: #66ff99;
-  --green-dim: #339966;
+  --green: #b5e853;
+  --green-dim: #6b8f3d;
   --fg: #e8e8e8;
   --dim: #999;
 }
@@ -24,7 +24,7 @@ body {
   display: flex; align-items: center; gap: 24px;
   height: 96px; padding: 0 28px;
   background: #000;
-  border-bottom: 2px solid green;
+  border-bottom: 2px solid var(--green);
   position: relative; z-index: 10;
 }
 .brand img { height: 72px; width: auto; display: block; }
@@ -66,7 +66,7 @@ body {
   display: none;
   flex-direction: column;
   background: #000;
-  border-bottom: 2px solid green;
+  border-bottom: 2px solid var(--green);
   position: relative; z-index: 10;
 }
 .nav-mobile.open { display: flex; }

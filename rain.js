@@ -24,10 +24,10 @@
       const x = i * fs * 1.4 + fs * 0.5;
       const y = drops[i] * fs;
       // brighter head
-      ctx.fillStyle = "rgba(102, 255, 153, 0.85)";
+      ctx.fillStyle = "rgba(181, 232, 83, 0.85)";
       ctx.fillText(Math.random() < 0.5 ? "0" : "1", x, y);
       // dimmer trail
-      ctx.fillStyle = "rgba(51, 153, 102, 0.5)";
+      ctx.fillStyle = "rgba(107, 143, 61, 0.5)";
       ctx.fillText(Math.random() < 0.5 ? "0" : "1", x, y - fs);
       drops[i]++;
       if (y > h && Math.random() > 0.985) drops[i] = 0;
