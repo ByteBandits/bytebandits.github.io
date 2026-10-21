@@ -1,11 +1,11 @@
 :root {
-  --bg: #000;
-  --panel: #0a0f0a;
-  --border: #163016;
+  --bg: #0d1117;
+  --panel: #161b22;
+  --border: #21262d;
   --green: #b5e853;
   --green-dim: #6b8f3d;
-  --fg: #e8e8e8;
-  --dim: #999;
+  --fg: #c9d1d9;
+  --dim: #8b949e;
 }
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -13,7 +13,7 @@
 body {
   background: var(--bg);
   color: var(--fg);
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: ui-monospace, "SF Mono", SFMono-Regular, Menlo, Consolas, monospace;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -23,7 +23,7 @@ body {
 .topbar {
   display: flex; align-items: center; gap: 24px;
   height: 96px; padding: 0 28px;
-  background: #000;
+  background: var(--bg);
   border-bottom: 2px solid var(--green);
   position: relative; z-index: 10;
 }
@@ -32,8 +32,8 @@ body {
 .nav-desktop { margin-left: auto; display: flex; align-items: center; gap: 26px; }
 .nav-desktop > a {
   color: #fff; text-decoration: none;
-  font-family: "Cabin", -apple-system, "Helvetica Neue", sans-serif;
-  font-size: 15px; letter-spacing: 0.05em;
+  font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  font-size: 15px; letter-spacing: 0.08em; text-transform: uppercase;
   padding-bottom: 4px;
   border-bottom: 4px solid transparent;
   transition: color 0.2s;
@@ -46,7 +46,7 @@ body {
   margin-left: 18px; padding-left: 18px;
   border-left: 1px solid #1f3d1f;
 }
-.nav-social a { color: var(--dim); display: inline-flex; transition: color 0.2s; }
+.nav-social a { color: #fff; display: inline-flex; transition: color 0.2s; }
 .nav-social a:hover { color: var(--green); }
 
 .burger {
@@ -65,14 +65,14 @@ body {
 .nav-mobile {
   display: none;
   flex-direction: column;
-  background: #000;
+  background: var(--bg);
   border-bottom: 2px solid var(--green);
   position: relative; z-index: 10;
 }
 .nav-mobile.open { display: flex; }
 .nav-mobile > a {
   color: #fff; text-decoration: none; text-align: center;
-  font-family: "Cabin", -apple-system, sans-serif;
+  font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
   font-size: 17px; padding: 22px;
   border-bottom: 1px solid var(--border);
 }
@@ -82,7 +82,7 @@ body {
   display: flex; justify-content: center; gap: 22px;
   padding: 14px 0;
 }
-.nav-mobile-social a { color: var(--dim); text-decoration: none; font-size: 14px; font-family: "Cabin", -apple-system, sans-serif; }
+.nav-mobile-social a { color: var(--dim); text-decoration: none; font-size: 14px; font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace; }
 .nav-mobile-social a:hover { color: var(--green); }
 
 @media (max-width: 640px) {
@@ -105,14 +105,15 @@ body {
   z-index: 2;
   max-width: 640px; width: calc(100% - 48px);
   padding: 34px 40px;
-  background: rgba(0, 0, 0, 0.88);
+  background: rgba(13, 17, 23, 0.92);
   border: 1px solid var(--green-dim);
   border-radius: 6px;
   text-align: center;
 }
 .banner h1 {
-  font-family: "Cabin", -apple-system, "Helvetica Neue", sans-serif;
-  font-size: 40px; color: #fff; margin-bottom: 18px;
+  color: var(--green);
+  font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  font-size: 40px; color: var(--green); margin-bottom: 18px;
 }
 .banner p { margin-bottom: 14px; line-height: 1.65; }
 .banner p:last-child { margin-bottom: 0; }
@@ -122,8 +123,8 @@ body {
 /* ── team page ──────────────────────────────────── */
 .page { max-width: 1080px; margin: 0 auto; padding: 40px 24px 80px; width: 100%; }
 .page-title {
-  font-family: "Cabin", -apple-system, sans-serif;
-  color: #fff; margin-bottom: 30px;
+  font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  color: var(--green); margin-bottom: 30px;
 }
 .team-grid {
   display: grid; gap: 22px;
@@ -139,7 +140,7 @@ body {
 .member img { width: 100%; border-radius: 4px; display: block; }
 .member-name {
   margin: 10px 0 8px; font-size: 14.5px; color: #fff;
-  font-family: "Cabin", -apple-system, sans-serif;
+  font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
   white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
 }
 .member-links { display: flex; justify-content: center; gap: 16px; }

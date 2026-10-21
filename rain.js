@@ -17,7 +17,7 @@
   }
 
   function frame() {
-    ctx.fillStyle = "rgba(0, 0, 0, 0.08)";
+    ctx.fillStyle = "rgba(13, 17, 23, 0.08)";
     ctx.fillRect(0, 0, w, h);
     const fs = FONT * devicePixelRatio;
     for (let i = 0; i < cols; i++) {
