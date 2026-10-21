@@ -33,7 +33,7 @@ body {
 .nav-desktop > a {
   color: var(--dim); text-decoration: none;
   font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
-  font-size: 15px; letter-spacing: 0.08em; text-transform: uppercase;
+  font-size: 15px; letter-spacing: 0.08em; 
   padding-bottom: 4px;
   border-bottom: 4px solid transparent;
   transition: color 0.2s;
